@@ -12,6 +12,7 @@ const TextInput = ({
   style = {},
   size = 'medium',
   onChange,
+  autoCapitalize = 'none',
   ...props
 }) => {
   const styles = getStyles({size});
@@ -26,6 +27,7 @@ const TextInput = ({
       dense={size === 'small'}
       mode={mode}
       onChangeText={handleChange}
+      autoCapitalize={autoCapitalize}
       {...props}
     />
   );

@@ -28,6 +28,8 @@ export const messages = {
   task_settings_header_desc: 'settings for tasks',
   // Task Settings
   task_settings_apply_button_label: 'Apply',
+  // Profile
+  profile_edit_profile_button_label: 'Edit Profile',
   // Common
   session_timeout_text: 'Session expired',
 };

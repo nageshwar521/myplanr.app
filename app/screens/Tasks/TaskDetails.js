@@ -44,7 +44,8 @@ const TaskDetails = () => {
       showAlert('Warning', message);
     } else {
       // showAlert('Form is valid');
-      updatePlan(taskDetails);
+      const {task, description, targetDate, ref_id} = taskDetails;
+      updatePlan({task, description, targetDate, id: ref_id});
     }
   };
 

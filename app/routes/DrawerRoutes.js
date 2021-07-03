@@ -12,6 +12,7 @@ import {useRoute} from '@react-navigation/core';
 import TaskDetails from '../screens/Tasks/TaskDetails';
 import TaskTabs from '../screens/Tasks/TaskTabs';
 import {Divider} from 'react-native-paper';
+import ProfileCard from '../screens/Profile/ProfileCard';
 
 const Drawer = createDrawerNavigator();
 
@@ -68,7 +69,10 @@ const CustomDrawerContent = (props) => {
   };
   return (
     <DrawerContentScrollView {...props}>
+      <ProfileCard />
       <DrawerItem label="Tasks" onPress={handleTasksPress} />
+      <Divider />
+      <DrawerItem label="Expenses" onPress={handleTasksPress} />
       <Divider />
       <DrawerItem label="Logout" onPress={() => handleAlert()} />
     </DrawerContentScrollView>

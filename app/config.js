@@ -1,5 +1,5 @@
-const isDevEnv = false; // process.env.NODE_ENV === 'development';
-const network_ip = '192.168.0.103';
+const isDevEnv = true; // process.env.NODE_ENV === 'development';
+const network_ip = '192.168.225.182';
 
 // console.log('isDevEnv');
 // console.log(isDevEnv);

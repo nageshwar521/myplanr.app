@@ -21,10 +21,6 @@ export const initialState = {
       autoHideToaster: true,
       toasterTimeout: 2000,
     },
-    user: {
-      displayDateFormat: 'DD MMM YYYY',
-      displayTimeFormat: 'kk-mm',
-      apiDateTimeFormat: 'YYYY-MM-DD kk-mm-SS',
-    },
   },
+  profile: null,
 };

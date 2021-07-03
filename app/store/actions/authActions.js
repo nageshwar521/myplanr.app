@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {loginApi} from '../../services/ApiService';
 import {setStoreStatus} from './commonActions';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const {createAction} = require('@reduxjs/toolkit');
 const {actionTypes} = require('../actionTypes');
@@ -24,8 +25,6 @@ export const login = (payload) => {
         dispatch(loginError());
       }
     } catch (error) {
-      console.log('login error');
-      console.log(error);
       dispatch(loginError());
     }
   };

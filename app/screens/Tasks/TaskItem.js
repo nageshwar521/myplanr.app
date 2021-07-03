@@ -1,7 +1,7 @@
 import {formatDistance} from 'date-fns';
 import * as React from 'react';
 import {View} from 'react-native';
-import {IconButton, List, useTheme} from 'react-native-paper';
+import {IconButton, List, useTheme, Colors} from 'react-native-paper';
 import {messages} from '../../locales/messages';
 import Button from '../../components/Button';
 import {useNavigation} from '@react-navigation/native';
@@ -63,12 +63,18 @@ const TaskItem = ({
       expanded={expanded}
       onPress={handlePress}>
       <View style={styles.row}>
-        <Button style={styles.openButton} size="small" onPress={handleOpen}>
-          {messages.plans_open_plan_button_label}
-        </Button>
-        <Button style={styles.deleteButton} size="small" onPress={handleDelete}>
-          {messages.plans_delete_plan_button_label}
-        </Button>
+        <IconButton
+          icon="file-document-edit-online"
+          style={styles.openButton}
+          size={20}
+          onPress={handleOpen}
+        />
+        <IconButton
+          icon="delete"
+          style={styles.deleteButton}
+          size={20}
+          onPress={handleDelete}
+        />
       </View>
     </List.Accordion>
   );
